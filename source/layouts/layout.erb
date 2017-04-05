@@ -24,6 +24,8 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <script src="https://use.fontawesome.com/b64eee1dd2.js"></script>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- CDN JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -37,12 +39,16 @@
     <title><%= current_page.data.title %> | Casa Blanca Construction </title>
   </head>
   <body>
-    <%= erb :'_header' %>
+    <%= partial "header" %>
     <br>
     <%= yield %>
     <br><br><br>
     <footer>
-      <% erb :'footer' %>
+      <% partial 'footer' %>
     </footer>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
   </body>
 </html>
