@@ -1,16 +1,34 @@
+.standards {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 75px;
+    color: #8b8589;
+}
+@media only screen and (max-width: 416px) {
+  .standards {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  .standards {
+    font-size: 30px;
+  }
+}
+
 nav.navbar.navbar-default {
     background-color: #ffffff;
     border-color: #ffffff;
 }
 
 .navbar-brand {
-  float: left;
-  height: 110px;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+    float: left;
+    height: 110px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .navbar a {
-  font-size: 18px;
+    font-size: 18px;
 }

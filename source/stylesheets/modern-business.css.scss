@@ -48,13 +48,12 @@ header.carousel .fill {
 
 /*index page*/
 
-.standards{
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  font-size: 85px;
-  color: #946b2d;
-  /*text-shadow: 4px 4px 4px #aaa;*/
-}
+// .standards{
+//   text-align: center;
+//   font-family: 'Oswald', sans-serif;
+//   font-size: 75px;
+//   color: #8b8589;
+// }
 
 
 
@@ -71,6 +70,8 @@ footer {
     .img-related {
         margin-bottom: 30px;
     }
+
+
 }
 
 @media(max-width:767px) {
@@ -81,4 +82,5 @@ footer {
     header.carousel .carousel {
         height: 70%;
     }
+
 }
