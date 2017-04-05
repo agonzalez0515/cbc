@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+      normalize.css removes cross-browser differences in defaults, e.g.,
+      differences in how form elements appear between Firefox and IE
+      See: http://necolas.github.com/normalize.css/
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+
+    <!-- CDN stylesheets -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+
+    <!-- custom stylesheets -->
+    <%= stylesheet_link_tag "creative" %>
+    <%= stylesheet_link_tag "modern-business" %>
+    <%= stylesheet_link_tag "site" %>
+
+    <!-- custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="https://use.fontawesome.com/b64eee1dd2.js"></script>
+
+
+    <!-- CDN JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- custom JS -->
+    <%= javascript_include_tag "creative" %>
+    <%= javascript_include_tag "scrollreveal" %>
+    <%= javascript_include_tag "site" %>
+
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title %> | Casa Blanca Construction </title>
+  </head>
+  <body>
+    <%= erb :'_header' %>
+    <br>
+    <%= yield %>
+    <br><br><br>
+    <footer>
+      <% erb :'footer' %>
+    </footer>
+  </body>
+</html>
