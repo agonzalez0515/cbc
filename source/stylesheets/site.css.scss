@@ -4,13 +4,16 @@
     font-size: 75px;
     color: #8b8589;
 }
+
+
+
 @media only screen and (max-width: 416px) {
   .standards {
     font-size: 50px;
   }
 }
 
-@media only screen and (max-width: 416px) {
+@media only screen and (max-width: 320px) {
   .standards {
     font-size: 30px;
   }
@@ -29,6 +32,6 @@ nav.navbar.navbar-default {
     line-height: 20px;
 }
 
-.navbar a {
-    font-size: 18px;
-}
+// .navbar a {
+//     font-size: 18px;
+// }
